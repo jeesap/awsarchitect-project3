@@ -7,11 +7,6 @@ Parameters:
   AmiIdAttackInstance:
     Type: String
     Default: "ami-01fcf79ce78f46764"
-  KeyPair:
-    Type: String
-    Description: "Name of an existing KeyPair you will use to access the EC2 instances in this exercise. Be sure you have access to the private key file corresponding to this keypair."
-
-
 Resources:
   InstanceRole:
     Type: 'AWS::IAM::Role'
@@ -72,7 +67,6 @@ Resources:
     Properties:
       ImageId: !Ref AmiIdRecipeWebServiceInstance
       InstanceType: t3.micro
-      KeyName: !Ref KeyPair
       SecurityGroupIds:
       - !GetAtt WebAppSG.GroupId
       SubnetId: !ImportValue PublicSubnetTrusted
@@ -168,7 +162,6 @@ Resources:
     Properties:
       ImageId: !Ref AmiIdAttackInstance
       InstanceType: t3.micro
-      KeyName: !Ref KeyPair
       IamInstanceProfile: !Ref InstanceProfileRole
       SecurityGroupIds:
       - !GetAtt AttackInstanceSG.GroupId
