@@ -1,0 +1,9 @@
+1.
+a. Checkov
+b. Anchore
+c. AWS config
+
+2. 
+a. Allows connection from all IPs(0.0.0.0)
+b. ssh access with password
+c. AWS config will report if S3 buckets have policies that require requests to use Secured Socket Layer ( SSL) . As this is not the case in this project , it will be reported.

@@ -1,0 +1,2 @@
+1. Policy InstanceRolePolicy-C3 allows any actions on all S3 resources. This is a security risk as IAM role could be used for modifying the content on S3 buckets.
+2. The security Group WebAppSG allows ssh from any source . This is also a security risk as this makes system vulnerable for attacks. 

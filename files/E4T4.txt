@@ -1,0 +1,4 @@
+1. Disable ssh completely. Block all ports to internet in EC2 instances.
+2. No. It won't prevent as permissions are still insecured.
+3. No . Only newly added files will be encrypted
+4. It will lose the new changes and goes back to its previous state with security vulnerabilities.

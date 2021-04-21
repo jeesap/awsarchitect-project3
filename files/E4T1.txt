@@ -1,0 +1,4 @@
+1) Disable ssh service
+or Disable ssh using password option
+
+2) By modifying the security policy of EC2 instances in such way that it should access only S3 bucket with Free receipes , we could have prevented access to sensitive data.

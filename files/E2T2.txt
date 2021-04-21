@@ -1,0 +1,5 @@
+1) On EC2 instances , process sshd is listening to TCP port 22 and is reachable from internet. This should be closed and must be accessible only from authenticated hosts.
+2) Ensure no security groups allow ingress from 0.0.0.0/0 to port 22 . The rule on security group must be modified to access from specific hosts
+3) Create a CloudTrail which is stored on S3
+4) Ensure the default security group of VPC restricts all traffic
+5) Restrict IAM policy of S3 buckets
